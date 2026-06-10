@@ -16,8 +16,6 @@ export const personal = {
   initials: "EO",
   tagline:
     "Turns early-stage product ideas into clear requirements, structured roadmaps, and go-to-market plans, in close partnership with cross-functional engineering and design teams.",
-  summary:
-    "During HNG Internship Cohort 14, she led MeetMind AI Interviewer end-to-end, owning the PRD, FRD, and TRD from scratch, building a 4-milestone roadmap of 80+ tickets across backend, frontend, DevOps, and design, and leading stakeholder alignment through to a go-to-market plan.",
   profileImage: "/images/profile/headshot.jpg",
 };
 

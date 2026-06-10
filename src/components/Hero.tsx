@@ -36,9 +36,6 @@ export function Hero() {
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-navy/80 sm:text-xl">
               {personal.tagline}
             </p>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-muted">
-              {personal.summary}
-            </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Button href="#case-studies" icon={<ArrowRight size={18} />}>
