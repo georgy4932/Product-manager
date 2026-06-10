@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Emmanuela Odoh — Product Management Portfolio
+
+A production-ready portfolio website built with Next.js 15 (App Router), TypeScript, and Tailwind CSS, showcasing product management work completed during HNG Internship Cohort 14.
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/         # App Router pages, layout, and global styles
+├── components/  # Section components (Hero, About, Experience, etc.) and shared UI primitives
+├── data/        # portfolio.ts — single source of truth for all site content
+├── lib/         # Shared utilities
+└── types/       # Shared TypeScript interfaces
+```
 
-## Learn More
+All copy, metrics, work samples, case studies, and links live in `src/data/portfolio.ts`, separate from the UI components.
 
-To learn more about Next.js, take a look at the following resources:
+## Updating the Hero Photo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The Hero section currently uses a styled placeholder. To use a real headshot:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Add the image to `public/images/profile/headshot.jpg`
+2. In `src/components/Hero.tsx`, replace `<AvatarPlaceholder />` with a Next.js `<Image>` pointing at `personal.profileImage` (already defined in `src/data/portfolio.ts`)
 
-## Deploy on Vercel
+## Build
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+npm run lint
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy
+
+This project is ready to deploy on [Vercel](https://vercel.com/new).
