@@ -15,9 +15,9 @@ export const personal = {
   role: "Product Manager",
   initials: "EO",
   tagline:
-    "Led MeetMind AI Interviewer from discovery through roadmap planning, technical requirements, and go-to-market strategy.",
+    "Turns early-stage product ideas into clear requirements, structured roadmaps, and go-to-market plans, in close partnership with cross-functional engineering and design teams.",
   summary:
-    "Owned the PRD, FRD, and TRD from scratch, built a 4-milestone roadmap of 80+ tickets across backend, frontend, DevOps, and design, and led stakeholder alignment through to a go-to-market plan.",
+    "During HNG Internship Cohort 14, she led MeetMind AI Interviewer end-to-end, owning the PRD, FRD, and TRD from scratch, building a 4-milestone roadmap of 80+ tickets across backend, frontend, DevOps, and design, and leading stakeholder alignment through to a go-to-market plan.",
   profileImage: "/images/profile/headshot.jpg",
 };
 
