@@ -1,0 +1,69 @@
+import Image from "next/image";
+import { ArrowRight, Mail } from "lucide-react";
+import { personal } from "@/data/portfolio";
+import { Container } from "@/components/ui/Container";
+import { Button } from "@/components/ui/Button";
+import { Reveal } from "@/components/ui/Reveal";
+
+export function Hero() {
+  return (
+    <section
+      id="top"
+      className="relative overflow-hidden bg-surface pb-20 pt-32 sm:pb-28 sm:pt-40"
+    >
+      <div
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle, #cbd5e1 1px, transparent 1px)",
+          backgroundSize: "32px 32px",
+          maskImage:
+            "linear-gradient(to bottom, black, transparent 70%)",
+          opacity: 0.4,
+        }}
+      />
+
+      <Container>
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
+          <Reveal>
+            <h1 className="text-4xl font-bold tracking-tight text-navy sm:text-5xl lg:text-6xl">
+              {personal.name}
+            </h1>
+            <p className="mt-3 text-xl font-semibold text-accent sm:text-2xl">
+              {personal.role}
+            </p>
+
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-navy/80 sm:text-xl">
+              {personal.tagline}
+            </p>
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-muted">
+              {personal.summary}
+            </p>
+
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <Button href="#case-studies" icon={<ArrowRight size={18} />}>
+                View Case Studies
+              </Button>
+              <Button href="#contact" variant="ghost" icon={<Mail size={18} />}>
+                Contact Me
+              </Button>
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.15} className="mx-auto w-full max-w-sm lg:max-w-none">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-xl shadow-navy/10 ring-1 ring-navy/5">
+              <Image
+                src={personal.profileImage}
+                alt="Emmanuela Odoh professional headshot"
+                fill
+                priority
+                sizes="(min-width: 1024px) 40vw, (min-width: 640px) 24rem, 100vw"
+                className="object-cover"
+              />
+            </div>
+          </Reveal>
+        </div>
+      </Container>
+    </section>
+  );
+}
