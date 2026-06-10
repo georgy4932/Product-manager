@@ -1,8 +1,8 @@
+import Image from "next/image";
 import { ArrowRight, Mail } from "lucide-react";
 import { personal } from "@/data/portfolio";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { AvatarPlaceholder } from "@/components/ui/AvatarPlaceholder";
 import { Reveal } from "@/components/ui/Reveal";
 
 export function Hero() {
@@ -55,10 +55,16 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={0.15} className="mx-auto w-full max-w-sm lg:max-w-none">
-            <AvatarPlaceholder
-              initials={personal.initials}
-              className="aspect-[4/5] w-full shadow-xl shadow-navy/10 ring-1 ring-navy/5"
-            />
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-xl shadow-navy/10 ring-1 ring-navy/5">
+              <Image
+                src={personal.profileImage}
+                alt="Emmanuela Odoh professional headshot"
+                fill
+                priority
+                sizes="(min-width: 1024px) 40vw, (min-width: 640px) 24rem, 100vw"
+                className="object-cover"
+              />
+            </div>
           </Reveal>
         </div>
       </Container>
