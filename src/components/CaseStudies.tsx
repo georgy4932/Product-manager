@@ -11,7 +11,7 @@ export function CaseStudies() {
         <SectionHeading
           eyebrow="Case Studies"
           title="Case Studies"
-          description="In-depth walkthroughs of two formal product assessments completed during HNG Internship Cohort 14. Expand each case study for the full breakdown."
+          description="In-depth walkthroughs of product leadership, prioritization, and assessment work completed during HNG Internship Cohort 14. Expand each case study for the full breakdown."
         />
 
         <div className="mt-12 space-y-6">

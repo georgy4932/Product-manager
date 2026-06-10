@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, FileText } from "lucide-react";
 import type { CaseStudy } from "@/types";
 import { cn } from "@/lib/utils";
 
@@ -99,6 +99,20 @@ export function CaseStudyItem({
                   {caseStudy.outcome}
                 </p>
               </div>
+
+              {caseStudy.link && (
+                <div>
+                  <a
+                    href={caseStudy.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-accent transition-colors hover:text-orange-600"
+                  >
+                    <FileText size={16} />
+                    {caseStudy.linkLabel}
+                  </a>
+                </div>
+              )}
             </div>
           </motion.div>
         )}

@@ -11,7 +11,7 @@ export function Skills() {
         <SectionHeading
           eyebrow="Skills"
           title="Skills & Tools"
-          description="A practical toolkit built through structured product work — from prioritization frameworks to stakeholder communication and execution tooling."
+          description="A practical toolkit built through structured product work, from prioritization frameworks to stakeholder communication and execution tooling."
         />
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

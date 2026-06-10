@@ -26,10 +26,6 @@ export function Hero() {
       <Container>
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
           <Reveal>
-            <span className="mb-6 inline-flex items-center rounded-full border border-border bg-white px-4 py-1.5 text-sm font-medium text-muted shadow-sm">
-              HNG Internship Cohort 14 · Product Management Track
-            </span>
-
             <h1 className="text-4xl font-bold tracking-tight text-navy sm:text-5xl lg:text-6xl">
               {personal.name}
             </h1>

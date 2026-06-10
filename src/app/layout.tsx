@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Emmanuela Odoh — Product Manager",
+  title: "Emmanuela Odoh, Product Manager",
   description:
     "Product Manager focused on product discovery, prioritization, stakeholder alignment, and go-to-market execution. Portfolio featuring MeetMind AI Interviewer and HNG Internship Cohort 14 work.",
   keywords: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Emmanuela Odoh" }],
   openGraph: {
-    title: "Emmanuela Odoh — Product Manager",
+    title: "Emmanuela Odoh, Product Manager",
     description:
       "Product Manager focused on product discovery, prioritization, stakeholder alignment, and go-to-market execution.",
     type: "website",

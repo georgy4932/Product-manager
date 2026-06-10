@@ -39,10 +39,8 @@ export interface WorkSample {
   title: string;
   category: string;
   context: string;
-  problem: string;
-  approach: string;
-  outcome: string;
   link?: string;
+  linkLabel?: string;
 }
 
 export interface CaseStudySection {
@@ -61,6 +59,8 @@ export interface CaseStudy {
   approach: string[];
   outcomeTitle: string;
   outcome: string;
+  link?: string;
+  linkLabel?: string;
 }
 
 export interface SkillCategory {
