@@ -1,6 +1,5 @@
 import type {
   NavLink,
-  Stat,
   ExperienceEntry,
   FeaturedProduct,
   WorkSample,
@@ -16,9 +15,9 @@ export const personal = {
   role: "Product Manager",
   initials: "EO",
   tagline:
-    "Product Manager focused on product discovery, prioritization, stakeholder alignment, and go-to-market execution.",
+    "Led MeetMind AI Interviewer from discovery through roadmap planning, technical requirements, and go-to-market strategy.",
   summary:
-    "Building user-centered products through structured thinking, clear communication, and cross-functional collaboration.",
+    "Owned the PRD, FRD, and TRD from scratch, built a 4-milestone roadmap of 80+ tickets across backend, frontend, DevOps, and design, and led stakeholder alignment through to a go-to-market plan.",
   profileImage: "/images/profile/headshot.jpg",
 };
 
@@ -37,9 +36,7 @@ export const about = {
   title: "About Me",
   paragraphs: [
     "Emmanuela Odoh is a Product Manager with hands-on experience leading product initiatives through HNG Internship Cohort 14, one of Africa's most rigorous product and engineering programmes — one where participants are assessed and eliminated at every stage based on output quality.",
-    "At HNG, she served as Product Manager for MeetMind, leading a cross-functional team of backend engineers, frontend engineers, DevOps engineers, and product designers through the full product lifecycle — from discovery and requirements to sprint execution, stakeholder management, and go-to-market planning.",
-    "She worked across product discovery, requirements definition, sprint planning, stakeholder communication, prioritization, product strategy, and go-to-market planning — owning the product story as much as the product spec.",
-    "She believes successful products emerge when user needs, business goals, and engineering realities are aligned.",
+    "At HNG, she served as Product Manager for MeetMind AI Interviewer, an AI agent that joins live interview calls and generates structured candidate scorecards. She led a cross-functional team of backend, frontend, DevOps, and product design engineers, translating product strategy into a roadmap the team could execute against.",
   ],
   highlights: [
     "Product Discovery",
@@ -52,19 +49,13 @@ export const about = {
   ],
 };
 
-export const stats: Stat[] = [
-  { value: "4+", label: "Product Milestones Managed" },
-  { value: "80+", label: "Cross-Functional Tickets Coordinated" },
-  { value: "2", label: "Formal Product Assessments Completed" },
-];
-
 export const experience: ExperienceEntry = {
   organization: "HNG Internship — Cohort 14",
   role: "Product Manager — MeetMind AI Interviewer",
   product: "MeetMind AI Interviewer",
   duration: "April 2026 – June 2026",
   summary:
-    "HNG is a highly competitive remote internship programme that simulates a real product company environment, with participants assessed and eliminated at every stage based on output quality. As Product Manager on the Product Management track, Emmanuela led the MeetMind team through the full product lifecycle and through formal product assessments including live prioritization and audit exercises.",
+    "As Product Manager on the Product Management track, Emmanuela was responsible for MeetMind's roadmap, requirements documentation, cross-functional delivery, and go-to-market plan — and completed two formal product assessments: a live RICE prioritization exercise under stakeholder pressure, and a healthtech product audit.",
   responsibilities: [
     "Led end-to-end product development for MeetMind AI Interviewer, an AI agent that joins Zoom and Google Meet interview calls, participates in real time, and generates structured candidate scorecards.",
     "Defined and managed the product roadmap across 4 milestones and a GTM phase — covering authentication, session setup, SDK integration, and scorecard generation.",
@@ -137,26 +128,26 @@ export const workSamples: WorkSample[] = [
     title: "Product Requirements Document (PRD)",
     category: "MeetMind AI Interviewer",
     context:
-      "Foundational product document for MeetMind AI Interviewer, written at the start of the HNG Cohort 14 build.",
+      "Foundational product document for MeetMind, written at the start of the build.",
     problem:
-      "Backend, frontend, DevOps, and design teams needed a single source of truth for what MeetMind was, who it served, and what success looked like before any work could begin.",
+      "Engineering and design needed one shared definition of what MeetMind was and what success looked like.",
     approach:
-      "Authored the PRD from scratch — defining the product vision, target users (recruiters), the Passive / Standard / Proactive participation model, and success criteria for the AI interviewer.",
+      "Defined the product vision, target users, and the Passive / Standard / Proactive participation model.",
     outcome:
-      "Gave all four engineering tracks a shared reference point, anchoring 4 milestones of roadmap planning and 80+ tickets.",
+      "Became the shared reference point behind the 4-milestone roadmap and 80+ tickets.",
   },
   {
     id: "frd",
     title: "Functional Requirements Document (FRD)",
     category: "MeetMind AI Interviewer",
     context:
-      "Companion document to the PRD, translating product requirements into functional behaviour for engineering.",
+      "Companion to the PRD, translating product requirements into functional behaviour for engineering.",
     problem:
-      "Engineers needed precise functional definitions for real-time call participation, scorecard tracking, follow-up questioning, and post-call summary generation.",
+      "Engineers needed precise definitions for call participation, scorecard tracking, follow-ups, and summary generation.",
     approach:
-      "Documented the functional flow and expected behaviour for each core capability, mapped directly to the participation modes defined in the PRD.",
+      "Mapped the functional flow and expected behaviour for each capability to the PRD's participation modes.",
     outcome:
-      "Provided backend and frontend teams with a shared functional reference used throughout sprint execution.",
+      "Gave backend and frontend a shared functional reference for sprint execution.",
   },
   {
     id: "trd",
@@ -165,11 +156,11 @@ export const workSamples: WorkSample[] = [
     context:
       "Technical specification for MeetMind's SDK integration milestone.",
     problem:
-      "Without measurable technical benchmarks, the SDK integration milestone had no objective definition of “done.”",
+      "The SDK integration milestone had no objective, testable definition of “done.”",
     approach:
-      "Defined transcript accuracy benchmarks (word error rate below 10%), voice response latency requirements (under 6 seconds), and audio data purge windows (10 minutes post-session).",
+      "Set benchmarks: word error rate below 10%, voice response latency under 6 seconds, audio purge within 10 minutes post-session.",
     outcome:
-      "Gave engineering concrete, testable acceptance criteria for the SDK integration milestone.",
+      "Gave engineering concrete, testable acceptance criteria for the milestone.",
   },
   {
     id: "mvp-milestones",
@@ -178,9 +169,9 @@ export const workSamples: WorkSample[] = [
     context:
       "Roadmap planning for MeetMind's path from MVP to go-to-market.",
     problem:
-      "A complex AI product build — covering authentication, sessions, AI integration, and scorecards — needed to be sequenced into a roadmap a full cross-functional team could execute against.",
+      "A complex AI product build needed sequencing into a roadmap the full cross-functional team could execute.",
     approach:
-      "Defined and managed a roadmap of 4 milestones plus a dedicated GTM phase, then broke each milestone into ClickUp-ready tickets with Ticket ID, Track, Description, Problem Statement, User Story, Acceptance Criteria, Edge Cases, Requirements, Assignee, Priority, Dependencies, and Status.",
+      "Defined a 4-milestone roadmap plus a GTM phase, then broke each milestone into fully scoped ClickUp tickets.",
     outcome:
       "Produced 80+ tracked tickets across BE, FE, DevOps, PD, and QA — the operational backbone of the build.",
   },
@@ -189,39 +180,39 @@ export const workSamples: WorkSample[] = [
     title: "RICE Prioritization Exercise",
     category: "VendSync Q3 · Stage 7 Simulation",
     context:
-      "VendSync, a simulated B2B SaaS platform for African merchants, had 34 backlog points competing for a 15-point sprint, with five initiatives each backed by a powerful internal sponsor.",
+      "VendSync (Stage 7 simulation): 34 backlog points competing for a 15-point sprint across five sponsor-backed initiatives.",
     problem:
-      "The CEO's preferred feature — an AI Inventory Predictor — had a RICE score of just 0.2 (zero user requests, 20% confidence, a 9-point cost), yet the CEO had publicly committed it to investors for Q3.",
+      "The CEO's favoured feature — an AI Inventory Predictor — scored just 0.2 on RICE, despite a public investor commitment.",
     approach:
-      "Applied the RICE framework (Reach, Impact, Confidence, Effort) to all five competing items, deliberately using the Confidence variable to surface qualitative risk that raw demand data could not capture.",
+      "Scored all five initiatives using RICE (Reach, Impact, Confidence, Effort), using Confidence to surface risk raw demand data missed.",
     outcome:
-      "Selected the Inventory Database Refactor (RICE 38.6) and the White Screen Checkout Bug Fix (RICE 8.1) — 11 of 15 points — and reserved 4 points for QA and integration buffer, with documented justification for cutting the AI Predictor, WhatsApp Bot, and Multi-Currency Wallet.",
+      "Selected the Database Refactor (38.6) and Checkout Bug Fix (8.1) — 11 of 15 points — with documented cuts to the rest.",
   },
   {
     id: "ceo-pushback-memo",
     title: "CEO Stakeholder Pushback Memo",
     category: "VendSync Q3 · Stage 7 Simulation",
     context:
-      "Direct follow-on from the VendSync RICE exercise — the CEO had publicly committed the AI Inventory Predictor to investors for Q3.",
+      "Follow-on from the VendSync RICE exercise, after the CEO publicly committed the AI Predictor to investors.",
     problem:
-      "Cutting the CEO's preferred feature was the right product call, but also the most politically sensitive one — it had to be communicated without losing executive trust.",
+      "Cutting the CEO's preferred feature was the right call — and the most politically sensitive one.",
     approach:
-      "Wrote a one-page, data-referenced memo to the CEO that acknowledged the investor commitment directly and proposed a concrete Q3 discovery / Q4 consideration path, then defended the reasoning in a 3-minute video.",
+      "Wrote a one-page, data-referenced memo proposing a Q3 discovery / Q4 consideration path, then defended it on video.",
     outcome:
-      "Turned a politically difficult “no” into a structured path forward, backed by a full RICE matrix and a documented rationale for every score.",
+      "Turned a difficult “no” into a structured path forward, backed by the full RICE matrix and documented rationale.",
   },
   {
     id: "clinsight-audit",
     title: "Clinsight Product Audit",
     category: "Clinsight Healthtech · Stage 6 Simulation",
     context:
-      "Formal PM assessment of Clinsight, a Nigerian healthtech product that lets users upload lab results and receive AI-generated, plain-language interpretations.",
+      "Formal PM assessment of Clinsight, a Nigerian healthtech product giving AI-generated, plain-language lab result interpretations.",
     problem:
-      "Clinsight was preparing to launch with no NDPR compliance plan, no clinical validation layer, and an undocumented AI confidence-scoring method.",
+      "Clinsight was preparing to launch with no NDPR compliance plan, no clinical validation layer, and an undocumented confidence-scoring method.",
     approach:
-      "Reviewed the PRD, FRD, MVP milestone plan, and GitHub repository; ran a five-dimension audit covering clinical validation, execution risk, unclear requirements, stakeholder concerns, and delivery scalability; and applied a risk framework that surfaced three formal risks.",
+      "Audited the PRD, FRD, MVP plan, and GitHub repo across five dimensions, then applied a risk framework surfacing three formal risks.",
     outcome:
-      "Issued a verdict of “Approved with Risks” alongside six formal pre-launch conditions, two presentation decks, and a leadership assessment identifying trust as the primary launch risk.",
+      "Issued an “Approved with Risks” verdict with six pre-launch conditions and a leadership assessment naming trust as the top launch risk.",
   },
   {
     id: "gtm-strategy",
@@ -230,15 +221,35 @@ export const workSamples: WorkSample[] = [
     context:
       "GTM phase of the MeetMind roadmap, planned alongside the product build.",
     problem:
-      "MeetMind needed a credible path from a built product to validation with real recruiters in market.",
+      "MeetMind needed a credible path from built product to validation with real recruiters.",
     approach:
-      "Produced a market analysis, ICP definition, competitive positioning, pricing tiers, acquisition channels, and a pilot validation plan for 15 pilot recruiters.",
+      "Defined market analysis, ICP, competitive positioning, pricing tiers, acquisition channels, and a pilot plan for 15 recruiters.",
     outcome:
-      "Delivered a launch-week execution plan and pilot validation framework ready to test MeetMind with real users.",
+      "Delivered a launch-week execution plan ready to test MeetMind with real users.",
   },
 ];
 
 export const caseStudies: CaseStudy[] = [
+  {
+    id: "meetmind-product-leadership",
+    title: "Leading MeetMind AI Interviewer: PRD to Go-to-Market",
+    subtitle: "End-to-End Product Ownership · Roadmap & Cross-Functional Delivery · HNG Cohort 14",
+    context:
+      "As Product Manager for MeetMind AI Interviewer — an AI agent that joins Zoom and Google Meet interviews, tracks scorecard coverage in real time, and generates structured candidate summaries — Emmanuela owned the product end-to-end during HNG Internship Cohort 14 (April–June 2026), leading a cross-functional team of backend, frontend, DevOps, and product design engineers from a blank page to a go-to-market plan.",
+    problemTitle: "The Challenge",
+    problem:
+      "MeetMind started with no documentation, no defined participation model, and a four-track engineering team waiting for direction. A complex AI product — spanning authentication, live session handling, SDK integration, and AI-generated scorecards — had to be defined, sequenced into a roadmap, and broken into work the team could execute against on a fixed internship timeline.",
+    approachTitle: "What I Did",
+    approach: [
+      "Authored the PRD, FRD, and TRD from scratch, defining the product vision and a Passive / Standard / Proactive participation model based on recruiter context research.",
+      "Built a roadmap of 4 milestones plus a dedicated GTM phase, then broke it into 80+ ClickUp-ready tickets across Backend, Frontend, DevOps, Product Design, and QA — each scoped with acceptance criteria, edge cases, dependencies, and priority.",
+      "Led the SDK integration milestone, setting concrete technical acceptance criteria: transcript word error rate below 10%, voice response latency under 6 seconds, and audio data purge within 10 minutes of a session ending.",
+      "Managed stakeholder communication across all four engineering tracks — resolving conflicts, unblocking engineers, and aligning the team on scope decisions under deadline pressure.",
+    ],
+    outcomeTitle: "Outcome",
+    outcome:
+      "Delivered the product's foundational documentation (PRD, FRD, TRD, MVP milestone plan) as the shared reference point for all four engineering tracks, plus a complete go-to-market strategy — market analysis, pricing tiers, and a pilot validation plan for 15 recruiters — for a product now live at meetmind.hng14.com.",
+  },
   {
     id: "vendsync-prioritization",
     title: "The Backlog Crisis: VendSync Q3 Prioritization",

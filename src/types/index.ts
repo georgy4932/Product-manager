@@ -3,11 +3,6 @@ export interface NavLink {
   href: string;
 }
 
-export interface Stat {
-  value: string;
-  label: string;
-}
-
 export interface TimelineItem {
   title: string;
   description: string;
